@@ -1,0 +1,20 @@
+header {
+    background-color: black;
+
+}
+
+header figure {
+    display: flex;
+    justify-content: center;
+}
+
+footer div{
+    background-color: black;
+    width: 100%;
+    
+}
+
+footer div h2 {
+    color: white;
+}
+
