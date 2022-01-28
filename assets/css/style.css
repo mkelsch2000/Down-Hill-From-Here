@@ -1,0 +1,16 @@
+.bg-dark {
+  background-color: #1a1818;
+}
+
+.reel {
+  background-image: url("../../images/Group\ 66.png");
+  background-size: cover;
+  background-repeat: repeat;
+  background-attachment: inherit;
+  background-position: center 1%; 
+}
+
+
+.SWIT {
+  margin-top: 10%;
+}
