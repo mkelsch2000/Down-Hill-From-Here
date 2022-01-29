@@ -1,0 +1,79 @@
+
+/* Background image */
+.reel {
+  background-image: url("../../images/Group\ 66.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: inherit;
+  background-position: center 0%; 
+  z-index: -2;
+}
+
+/* Utility classes */
+.bg-dark {
+  background-color: #1a1818;
+}
+
+.image-centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-height {
+  height: 250px;
+}
+
+.bottom {
+  padding-top: 175px;
+}
+
+.text-size {
+  font-size: 2.5rem;
+}
+
+/* Media Queries for responsive design */
+@media screen and (max-width: 1200px) {
+  .section-height {
+    height: 215px;
+  }
+  .bottom {
+    padding-top: 140px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .section-height {
+    height: 175px;
+  }
+  .bottom {
+    padding-top: 110px;
+  }
+  .text-size {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .section-height {
+    height: 125px;
+  }
+  .bottom {
+    padding-top: 80px;
+  }
+  .text-size {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .section-height {
+    height: 80px;
+  }
+  .bottom {
+    padding-top: 45px;
+  }
+  .text-size {
+    font-size: 1.2rem;
+  }
+}
