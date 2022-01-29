@@ -1,3 +1,15 @@
+
+/* Background image */
+.reel {
+  background-image: url("../../images/Group\ 66.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: inherit;
+  background-position: center 0%; 
+  z-index: -2;
+}
+
+/* Utility classes */
 .bg-dark {
   background-color: #1a1818;
 }
@@ -6,15 +18,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.reel {
-  background-image: url("../../images/Group\ 66.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: inherit;
-  background-position: center 0%; 
-  z-index: -2;
 }
 
 .section-height {
@@ -29,6 +32,7 @@
   font-size: 2.5rem;
 }
 
+/* Media Queries for responsive design */
 @media screen and (max-width: 1200px) {
   .section-height {
     height: 215px;
