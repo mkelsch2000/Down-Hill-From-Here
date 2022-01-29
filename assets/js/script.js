@@ -12,14 +12,34 @@ $(document).ready(function () {
 });
 
 
-    var urlSearch = "https://api.themoviedb.org/3/movie/now_playing?api_key=8c898a456ab85fa46fb53684097389dc&language=en-US&region=US"
+    // var urlSearch = "https://api.themoviedb.org/3/movie/now_playing?api_key=8c898a456ab85fa46fb53684097389dc&language=en-US&region=US"
 
-    fetch(urlSearch).then(function(response) {
-      if (response.ok) {
-        response.json().then(function(data) {
-          console.log(data);
-        })
-      }
-    });
+    // fetch(urlSearch).then(function(response) {
+    //   if (response.ok) {
+    //     response.json().then(function(data) {
+    //       console.log(data);
+    //     //   console.log(results.title);
+    //     })
+    //   }
+    // });
 
-    
+fetch("https://api.themoviedb.org/3/movie/now_playing?api_key=8c898a456ab85fa46fb53684097389dc&language=en-US&region=US")
+// .then(function (response) {
+//     if (response.ok) {
+//         return response.json();
+//     }
+// })
+.then(response => response.json())
+.then(data => {
+    const list = data.results;
+
+    list.map((item) => {
+        // console.log(item)
+        const name = item.title
+        const poster = item.poster_path.imageUrl;
+        const movie = '<li><img src="${poster}"> <h2>${name}</h2> </li>'
+        document.querySelector('.movies').innerHTML += movie
+    })
+})
+
+
