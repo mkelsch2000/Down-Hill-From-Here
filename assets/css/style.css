@@ -2,15 +2,74 @@
   background-color: #1a1818;
 }
 
+.image-centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .reel {
   background-image: url("../../images/Group\ 66.png");
   background-size: cover;
-  background-repeat: repeat;
+  background-repeat: no-repeat;
   background-attachment: inherit;
-  background-position: center 1%; 
+  background-position: center 0%; 
+  z-index: -2;
 }
 
+.section-height {
+  height: 250px;
+}
 
-.SWIT {
-  margin-top: 10%;
+.bottom {
+  padding-top: 175px;
+}
+
+.text-size {
+  font-size: 2.5rem;
+}
+
+@media screen and (max-width: 1200px) {
+  .section-height {
+    height: 215px;
+  }
+  .bottom {
+    padding-top: 140px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .section-height {
+    height: 175px;
+  }
+  .bottom {
+    padding-top: 110px;
+  }
+  .text-size {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .section-height {
+    height: 125px;
+  }
+  .bottom {
+    padding-top: 80px;
+  }
+  .text-size {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .section-height {
+    height: 80px;
+  }
+  .bottom {
+    padding-top: 45px;
+  }
+  .text-size {
+    font-size: 1.2rem;
+  }
 }

@@ -14,23 +14,33 @@
 </head>
 
 <body>
-    <header class="columns is-multiline is-centered bg-dark m-0 is-gapless is-mobile">
-        <div>
-            <img class="column p-1"src="./images/on screen logo-1.png" alt="On screen logo" />
-        </div>
-        <div class="reel column is-full ">
-          <div class="has-text-centered SWIT">
-            <h1 class="column pt-5 mt-6 is-size-2-tablet is-size-4-mobile has-text-weight-bold has-text-white">
-                SEE WHAT IS IN THEARTERS NOW
-            </h1>
-          </div>
+
+    <!-- Hero/Logo -->
+    <header class="hero is-small pb-3 bg-dark">
+        <div class="hero-body">
+            <figure class="image image-centered">
+              <img src="./images/on screen logo-1.png" style="max-width: 125px;"/>
+            </figure>
+          </div>  
         </div>
     </header>
+    <!-- Hero/Logo End -->
 
-    <section>
-        
-        
+    <!-- Movie Reel -->
+    <section class="section p-0 reel section-height">
+      <div class="container m-0 mx-auto">
+        <div class="columns has-text-centered is-full-width">
+          <h1 class="column bottom text-size has-text-weight-bold has-text-white">
+            SEE WHAT IS IN THEARTERS NOW
+          </h1>
+        </div>
+      </div>
+    </section>
+    <!-- Movie Reel End -->
 
+    
+
+    <section class="section">
         <div class="container">
             <!-- Start Carousel -->
             <div id="carousel-demo" class="carousel">
@@ -47,23 +57,26 @@
             <!-- End Carousel -->
     </section>
 
-    <section>
-        <div>
-            <h1>Find theaters near me</h1>
-            <form>
-                <input placeholder="Enter Zip Code" type="text" />
-                <button type="submit" class="btn">Search</button>
-            </form>
+    <section class="section is-medium">
+      <div class="container">
+        <div class="columns is-mobile is-multiline">
+          <h1 class="column is-full is-size-1-tablet is-size-2-mobile has-text-weight-bold has-text-centered">Find theaters nearby</h1>
+          <form class="column is-flex is-justify-content-center is-12">
+              <input placeholder="ZIP CODE" type="text" />
+              <button type="submit" class="btn">Search</button>
+          </form>
+          <iframe class="column is-4-tablet is-10-mobile mx-auto is-flex is-justify-content-center" src="url" title="description"></iframe>
         </div>
-        <iframe src="url" title="description">
-        </iframe>
-
-        <footer>
-            <div>
-                <h2>"When life gets you down, you know what you gotta do? Just keep swimming." — Dory</h2>
-            </div>
-        </footer>
+      </div>
     </section>
+
+    <footer class="footer">
+      <div class="container">
+          <h2 class="column has-text-centered is-size-4-tablet is-size-6-mobile">"When life gets you down, you know what you gotta do? Just keep swimming." — Dory</h2>
+      </div>
+    </footer>
+    
+
     <script src="~bulma-carousel/dist/js/bulma-carousel.min.js"></script>
     <script src="./assets/js/script.js"></script>
 </body>
