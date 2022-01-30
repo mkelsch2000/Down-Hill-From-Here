@@ -5,10 +5,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"> -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
-    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.4/dist/css/bulma-carousel.min.css"/> -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css"
@@ -21,32 +17,40 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.3/dist/css/bulma-carousel.min.css"
     />
+
     <link rel="stylesheet" href="./assets/css/style.css" />
     <title>On Screen</title>
 </head>
 
 <body>
-    <header>
-        <figure>
-            <img src="./images/on screen logo-1.png" alt="On screen logo" />
-        </figure>
-        <!-- <figure class="image is-128x128">
-            <img src="https://bulma.io/images/placeholders/256x256.png">
-          </figure> -->
-    </header>
 
-    <section>
-        <div>
-            <img src="./images/Group 66.png" alt="movie reel background">
+
+    <!-- Hero/Logo -->
+    <header class="hero is-small pb-3 bg-dark">
+        <div class="hero-body">
+            <figure class="image image-centered">
+              <img src="./images/on screen logo-1.png" style="max-width: 125px;" alt="On screen logo"/>
+            </figure>
+          </div>  
         </div>
-        <div>
-            <h1>
-                SEE WHAT'S IN THEARTERS
-            </h1>
-            
+    </header>
+    <!-- Hero/Logo End -->
+
+
+    <!-- Movie Reel -->
+    <section class="section p-0 reel section-height">
+      <div class="container m-0 mx-auto">
+        <div class="columns has-text-centered is-full-width">
+          <h1 class="column bottom text-size has-text-weight-bold has-text-white">
+            SEE WHAT IS IN THEATERS NOW
+          </h1>
         </div>
-        <div class="container">
-            <!-- Start Carousel -->
+      </div>
+    </section>
+    <!-- Movie Reel End -->
+     <!-- Start Carousel -->
+     <section class="section">
+        <div class="container">           
             <div id="carousel-demo" class="carousel">
               <div class="item-1">
                 <span class="movies" id="movieTitle">
@@ -71,58 +75,36 @@
                   /></a>
                 </span>
               </div>
-            </div>
-            <!-- End Carousel -->
+            </div>           
           </div>
+        </section>
+       <!-- End Carousel -->
 
-        <!-- <div class="container"> -->
-            <!-- Start Carousel -->
-            <!-- <div id="carousel-demo" class="carousel"> -->
-                <!-- <div class="item-1"> -->
-                    <!-- <span class="movieResult" id="movieTitle"> -->
-                    <!-- <img src="https://bulma.io/images/placeholders/256x256.png"> -->
-                    <!-- Slide Content -->
-                <!-- </span> -->
-                <!-- </div> -->
-                <!-- <div class="item-2"> -->
-                    <!-- <img src="https://bulma.io/images/placeholders/256x256.png"> -->
-                    <!-- Slide Content -->
-                <!-- </div> -->
-                <!-- <div class="item-3"> -->
-                    <!-- <img src="https://bulma.io/images/placeholders/256x256.png"> -->
-                    <!-- Slide Content -->
-                <!-- </div> -->
-            <!-- </div> -->
-            <!-- End Carousel -->
+    <!-- Search section -->
+    <section class="section is-small">
+      <div class="container">
+        <div class="columns is-mobile is-multiline">
+          <h1 class="column is-full is-size-1-tablet is-size-2-mobile has-text-weight-bold has-text-centered">Find theaters nearby</h1>
 
 
-    </section>
-
-    <section>
-        <div>
-            <h1>Find theaters near me</h1>
-            <form>
-                <input placeholder="Enter Zip Code" type="text" />
-                <button type="submit" class="btn">Search</button>
-            </form>
+          <form class="column is-flex is-justify-content-center is-12" id="user-form">
+              <input placeholder="ZIP CODE" type="text" class="form-input"/>
+              <button type="submit" class="btn">Search</button>
+          </form>
+          <iframe class="column is-4-tablet is-10-mobile mx-auto is-flex is-justify-content-center" src="url" title="description"></iframe>
         </div>
-        <iframe src="url" title="description">
-        </iframe>
-
-        
+      </div>
     </section>
+    <!-- Search section end -->
+
+    <!-- Footer -->
     <footer class="footer">
-        <div class="content has-text-centered">
-            <h2 class="has-text-white">"When life gets you down, you know what you gotta do? Just keep swimming." — Dory</h2>
-        </div>
+      <div class="container">
+          <h2 class="column has-text-centered is-size-4-tablet is-size-6-mobile">"When life gets you down, you know what you gotta do? Just keep swimming." — Dory</h2>
+      </div>
     </footer>
-    <!-- <script src="https://cdn.jsdelivr.net/npm/bulma-carousel@3.0.0/dist/js/bulma-carousel.min.js"></script> -->
-    <!-- <script>
-		bulmaCarousel.attach('#carousel-demo', {
-			slidesToScroll: 1,
-			slidesToShow: 3
-		});
-		</script> -->
+  <!-- Footer End -->
+ <!-- Script Links -->
         <script src="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.3/dist/js/bulma-carousel.min.js"></script>
         <script>
           bulmaCarousel.attach("#carousel-demo", {
@@ -132,6 +114,7 @@
           });
         </script>
         <script src="./assets/js/script.js"></script>
+
 </body>
 
 </html>

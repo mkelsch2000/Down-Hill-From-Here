@@ -1,3 +1,4 @@
+
 // Initialize all div with carousel class
 var carousels = bulmaCarousel.attach('.carousel', options);
 
@@ -17,22 +18,3 @@ if (element && element.bulmaCarousel) {
 		console.log(state);
 	});
 }
-
-// fetch("https://api.themoviedb.org/3/movie/now_playing?api_key=8c898a456ab85fa46fb53684097389dc&language=en-US&region=US")
-// // .then(function (response) {
-// //     if (response.ok) {
-// //         return response.json();
-// //     }
-// // })
-// .then(response => response.json())
-// .then(data => {
-//     const list = data.results;
-
-//     list.map((item) => {
-//         // console.log(item)
-//         const name = item.title
-//         const poster = item.poster_path.imageUrl;
-//         const movie = '<li> <img src="${poster}"> <h2>${name}</h2> </li>'
-//         document.querySelector('.movies').innerHTML += movie;
-//     })
-// })
