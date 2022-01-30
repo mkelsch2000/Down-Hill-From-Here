@@ -32,6 +32,13 @@
   font-size: 2.5rem;
 }
 
+.google-map {
+  display: flex;
+  height: 40vh;
+  width: 30vw;
+  justify-content: center;
+}
+
 /* Media Queries for responsive design */
 @media screen and (max-width: 1200px) {
   .section-height {
@@ -39,6 +46,10 @@
   }
   .bottom {
     padding-top: 140px;
+  }
+  .google-map {
+    height: 40vh;
+    width: 40vw;
   }
 }
 
@@ -64,6 +75,10 @@
   .text-size {
     font-size: 1.5rem;
   }
+  .google-map {
+    height: 40vh;
+    width: 50vw;
+  }
 }
 
 @media screen and (max-width: 500px) {
@@ -75,5 +90,9 @@
   }
   .text-size {
     font-size: 1.2rem;
+  }
+  .google-map {
+    height: 40vh;
+    width: 60vw;
   }
 }
