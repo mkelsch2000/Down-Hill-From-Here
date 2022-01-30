@@ -1,4 +1,10 @@
 
+// selecting elements form the DOM
+const searchButton = document.querySelector("#searchbtn");
+
+// activate search button to populate data
+searchButton.onclick = function(event) {
+   
 
 // fetch movie data
 fetch("https://api.themoviedb.org/3/movie/now_playing?api_key=8c898a456ab85fa46fb53684097389dc&language=en-US&region=US")
@@ -20,6 +26,7 @@ fetch("https://api.themoviedb.org/3/movie/now_playing?api_key=8c898a456ab85fa46f
     })
   }
 });
+}
 
 // Initialize all div with carousel class
 var carousels = bulmaCarousel.attach('.carousel', options);

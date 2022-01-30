@@ -32,6 +32,10 @@
   font-size: 2.5rem;
 }
 
+.button:hover {
+
+}
+
 /* Media Queries for responsive design */
 @media screen and (max-width: 1200px) {
   .section-height {
