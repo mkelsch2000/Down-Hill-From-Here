@@ -1,4 +1,4 @@
-var apiUrl = "https://api.tomtom.com/search/2/geocode/Saint+George.sjon?key=AJyORkvIskjy38hOMUwmZeWJdZB2HIEt&entityTypeSet=Municipality,PostalCodeArea";
+var apiUrl = "https://api.tomtom.com/search/2/geocode/Saint+George+UT+94790.sjon?key=AJyORkvIskjy38hOMUwmZeWJdZB2HIEt";
 
 fetch(apiUrl).then(function(response) {
   if (response.ok) {
@@ -7,4 +7,9 @@ fetch(apiUrl).then(function(response) {
     })
   }
 })
+
+
+
+
+
 
