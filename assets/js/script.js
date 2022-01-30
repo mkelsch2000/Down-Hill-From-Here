@@ -44,10 +44,9 @@ $(document).ready(function () {
 
 // Initial Value
 const url = 'https://api.themoviedb.org/3/movie/now_playing?api_key=8c898a456ab85fa46fb53684097389dc&language=en-US&region=US';
-const IMAGE_URL = "https://image.tmdb.org/t/p/w500";
+const IMAGE_URL = "https://image.tmdb.org/t/p/w500/";
 
 // Selectors for DOM
-const searchBtn = document.querySelector('#search');
 const movieResults = document.querySelector('#movieResults');
 
 /*
@@ -64,7 +63,7 @@ const movieResults = document.querySelector('#movieResults');
 function movieSection(movies) {
     return movies.map((movie) => {
         return `
-            <img scr=${IMAGE_URL + movie.poster_path} data-movie-id=${movie.id}/>
+            <img scr=${IMAGE_URL + movie.poster_path} data-movie-title=${movie.title}/>
         `;
     })
 }
@@ -88,10 +87,6 @@ function createMovieContainer(movies) {
 }
 
 
-searchBtn.onclick = function (event) {
-    console.log("Hello World")
-
-
     fetch(url)
         .then((res) => res.json())
         .then((data) => {
@@ -101,5 +96,5 @@ searchBtn.onclick = function (event) {
             movieResults.appendChild(movieBlock);
             console.log('Data: ', data);
         })
-}
+
 
