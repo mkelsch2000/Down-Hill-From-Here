@@ -52,16 +52,16 @@
       <div class="tile is-parent is-vertical">
         <div class="tile is-child is-12">
           <h1 class="is-size-1-tablet is-size-2-mobile has-text-weight-bold has-text-centered">Find
-            theaters nearby</h1>
+            theaters near you!</h1>
         </div>
         <div class="tile is-child">
           <form class=" is-flex is-justify-content-center is-12" id="user-form">
-            <input placeholder="ZIP CODE" type="text" class="form-input" />
-            <button type="submit" class="btn">Search</button>
+            <input placeholder="ZIP CODE" type="text" class="form-input" id="zipInput"/>
+            <button id="search-Btn" class="btn">Search</button>
           </form>
         </div>
-        <div class="tile is-child">
-          <iframe class="google-map mx-auto" width="400" height="600" style="border:0" loading="lazy" allowfullscreen src="https://www.google.com/maps/embed/v1/search?q=movie%20theater&key=AIzaSyB48e1Y4iP0aPEAjd2_39LsvllEWYBBbb4" title="description"></iframe>
+        <div class="tile is-child" id="map-box">
+          <iframe class="google-map mx-auto" width="400" height="600" style="border:0" loading="lazy" allowfullscreen src="https://www.google.com/maps/embed/v1/search?q=movie%20theater&key=AIzaSyAnFqpH_kWqpIqDBT_nOesR9gTnPS9mIxg" title="description"></iframe>
         </div>
       </div>
     </div>
