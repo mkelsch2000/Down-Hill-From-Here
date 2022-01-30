@@ -55,8 +55,6 @@ const movieResults = document.querySelector('#movieResults');
         <img src="" alt="" data-movie-id="">
          <img src="" alt="" data-movie-id="">
          </section>
-    <div class="content">
-         <p id="content-close">X</p>
     /div>
  </div>
 */
@@ -76,9 +74,6 @@ function createMovieContainer(movies) {
     <section class="section">
         ${movieSection(movies)}
     </section>
-    <div clas="content">
-    <p id="content-close">X</p>
-    </div>
 `;
 
     movieElement.innerHTML = movieTemplate;
