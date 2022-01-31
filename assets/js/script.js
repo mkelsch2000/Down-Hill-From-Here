@@ -22,7 +22,7 @@ fetch("https://api.themoviedb.org/3/movie/now_playing?api_key=8c898a456ab85fa46f
 });
 
 // Initialize all div with carousel class
-var carousels = bulmaCarousel.attach('.carousel', options);
+var carousels = bulmaCarousel.attach('.carousel');
 
 // Loop on each carousel initialized
 for(var i = 0; i < carousels.length; i++) {
@@ -41,3 +41,14 @@ if (element && element.bulmaCarousel) {
 	});
 }
 
+// fetch data from input field
+var getRequestedData = function(event) {
+  // prevent reload when submitting
+  event.preventDefault()
+  // store data in variables
+  const zipEl = document.getElementById("zipInput").value;
+  const mapContainer = document.getElementById("map-box");
+  mapContainer.innerHTML = "";
+  mapContainer.innerHTML = "<iframe class='google-map mx-auto' width='400' height='600' style='border:0' loading='lazy' allowfullscreen src='https://www.google.com/maps/embed/v1/search?q=movie+theater+near+" + zipEl + "&key=AIzaSyAnFqpH_kWqpIqDBT_nOesR9gTnPS9mIxg' title='description'></iframe>"
+};
+document.getElementById("search-Btn").addEventListener("click", getRequestedData);
