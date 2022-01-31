@@ -38,14 +38,11 @@
     <!-- Movie Reel End -->
 
     <!-- Start Carousel -->
-    <section class="section">
-        <div class="container">
-            <div id="carousel-demo" class="columns carousel">
-                <div class="card" id="movie-card">
-                   
-                </div>
-            </div>
+    <section id="movies" class="block column is-10 is-offset-1 has-background-success-light">
+        <div class="carousel movies-carousel" id="carousel">
+                
         </div>
+        
     </section>
     <!-- End Carousel -->
 
@@ -82,7 +79,7 @@
     <!-- Script Links -->
     <script src="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.3/dist/js/bulma-carousel.min.js"></script>
     <script>
-        bulmaCarousel.attach("#carousel-demo", {
+        bulmaCarousel.attach("#carousel", {
             slidesToScroll: 1,
             slidesToShow: 1,
             navigationKeys: true,

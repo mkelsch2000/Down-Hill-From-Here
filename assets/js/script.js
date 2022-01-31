@@ -12,10 +12,11 @@ fetch("https://api.themoviedb.org/3/movie/now_playing?api_key=8c898a456ab85fa46f
       for (var i = 0; i < list.length; i++) {
         const movieName = list[i].title;
         const moviePoster = list[i].poster_path
+        const movieDate = list[i].release_date
         const movieDiv = document.createElement("div");
         movieDiv.classList.add("movies", "column", "is-1", "is-mobile", "content");
-        movieDiv.innerHTML = "<img src='https://image.tmdb.org/t/p/original" + moviePoster + "'/><h2>" + movieName + "</h2>";
-        document.getElementById("movie-card").appendChild(movieDiv);
+        movieDiv.innerHTML = "<img src='https://image.tmdb.org/t/p/original" + moviePoster + "'/><h2>" + movieName + "</h2><h3>" + movieDate + "</h3>";
+        document.getElementById("carousel").appendChild(movieDiv);
       }
     })
   }
