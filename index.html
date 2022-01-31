@@ -346,26 +346,27 @@
 
     </section>
     <!-- End Carousel -->
-
     <!-- Search section -->
     <section class="section is-small">
-        <div class="container">
-            <div class="columns is-mobile is-multiline">
-                <h1 class="column is-full is-size-1-tablet is-size-2-mobile has-text-weight-bold has-text-centered">Find
-                    theaters nearby</h1>
-
-                <form class="column is-flex is-justify-content-center is-12" id="user-form">
-                    <input placeholder="ZIP CODE" type="text" class="form-input" />
-                    <button type="submit" class="btn">Search</button>
-                </form>
-                <iframe class="column is-4-tablet is-10-mobile mx-auto is-flex is-justify-content-center" width="600"
-                    height="450" style="border:0" loading="lazy" allowfullscreen
-                    src="https://www.google.com/maps/embed/v1/search?q=movie%20theater&key=AIzaSyB48e1Y4iP0aPEAjd2_39LsvllEWYBBbb4"
-                    title="description"></iframe>
+        <div class="tile is-ancestor">
+        <div class="tile is-parent is-vertical">
+            <div class="tile is-child is-12">
+            <h1 class="is-size-1-tablet is-size-2-mobile has-text-weight-bold has-text-centered">Find
+                theaters near you!</h1>
             </div>
+            <div class="tile is-child">
+            <form class=" is-flex is-justify-content-center is-12" id="user-form">
+                <input placeholder="ZIP CODE" type="text" class="form-input" id="zipInput"/>
+                <button id="search-Btn" class="btn">Search</button>
+            </form>
+            </div>
+            <div class="tile is-child" id="map-box">
+            </div>
+        </div>
         </div>
     </section>
     <!-- Search section end -->
+ 
 
     <!-- Footer -->
     <footer class="footer">
