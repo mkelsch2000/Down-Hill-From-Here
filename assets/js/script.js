@@ -39,7 +39,7 @@ fetch("https://api.themoviedb.org/3/movie/now_playing?api_key=8c898a456ab85fa46f
 
           cardImg.setAttribute("src", "https://image.tmdb.org/t/p/original" + moviePoster)
           cardTitle.innerHTML = movieName
-          cardDate.innerHTML = movieDate
+          cardDate.innerHTML = "<b>Release Date:</b> " + movieDate
 
 
 
