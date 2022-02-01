@@ -1,5 +1,6 @@
 html, body {
   overflow-x: hidden;
+  -webkit-overflow-scrolling: auto;
 }
 body {
   position: relative
