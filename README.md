@@ -11,10 +11,12 @@
 - jQuery 
 - Moment.js
 
-## Screenshot
-![Screenshot full page](/assets/images/screenshot-1.png)
+## Screenshots
+### Full Page
+![Full page screenshot](images/screenshot-1.png)
 
-![Screenshot map feature](/assets/images/screenshot-2.png)
+### Map Feature
+![Map feature screenshot](images/screenshot-2.png)
 
-## Link
+## Link to Application
 - https://mkelsch2000.github.io/Down-Hill-From-Here/
