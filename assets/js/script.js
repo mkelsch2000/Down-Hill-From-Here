@@ -20,6 +20,10 @@ fetch("https://api.themoviedb.org/3/movie/now_playing?api_key=8c898a456ab85fa46f
         const list = data.results
         console.log(data.results);
 
+        localStorage.setItem("list", JSON.stringify(list));
+
+        JSON.parse(localStorage.getItem("list"));
+
         for (var i = 0; i < list.length; i++) {
           const movieName = list[i].title;
           const moviePoster = list[i].poster_path
