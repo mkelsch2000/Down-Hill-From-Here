@@ -5,18 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.3/dist/css/bulma-carousel.min.css"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.3/dist/css/bulma-carousel.min.css" />
 
     <link rel="stylesheet" href="./assets/css/style.css" />
     <title>On Screen</title>
@@ -24,98 +15,181 @@
 
 <body>
 
-  <!-- Hero/Logo -->
-  <header class="hero is-small pb-3 bg-dark">
-    <div class="hero-body">
-      <figure class="image image-centered">
-        <img src="./images/on screen logo-1.png" style="max-width: 125px;" />
-      </figure>
-    </div>
-  </header>
-  <!-- Hero/Logo End -->
-
-  <!-- Movie Reel -->
-  <section class="section p-0 reel section-height">
-    <div class="container m-0 mx-auto">
-      <div class="columns has-text-centered is-full-width">
-        <h1 class="column bottom text-size has-text-weight-bold has-text-white">
-          SEE WHAT IS IN THEATERS NOW
-        </h1>
-      </div>
-    </div>
-  </section>
-  <!-- Movie Reel End -->
-  
-     <!-- Start Carousel -->
-     <section class="section">
-        <div class="container">           
-            <div id="carousel-demo" class="carousel">
-              <div class="item-1">
-                <span class="movies" id="movieTitle">
-                  <!-- movie poster_path to replace placeholder image below -->
-                 <img src="./images/on screen logo.png"
-                  />
-                </span>
-              </div>
-              <div class="item-2">
-                <span class="movies" id="movieTitle">
-                  <!-- movie poster_path to replace placeholder image below -->
-                  <a href="https://placeholder.com"
-                    ><img src="https://via.placeholder.com/150"
-                  /></a>
-                </span>
-              </div>
-              <div class="item-3">
-                <span class="movies" id="movieTitle">
-                  <!-- movie_poster path to replace placeholder image below -->
-                  <a href="https://placeholder.com"
-                    ><img src="https://via.placeholder.com/150"
-                  /></a>
-                </span>
-              </div>
-            </div>           
-          </div>
-        </section>
-       <!-- End Carousel -->
-
-  <!-- Search section -->
-  <section class="section is-small">
-    <div class="container">
-      <div class="columns is-mobile is-multiline">
-        <h1 class="column is-full is-size-1-tablet is-size-2-mobile has-text-weight-bold has-text-centered">Find
-          theaters nearby</h1>
-
-
-          <form class="column is-flex is-justify-content-center is-12" id="user-form">
-              <input placeholder="ZIP CODE" type="text" class="form-input"/>
-              <button type="submit" class="btn">Search</button>
-          </form>
-          <iframe class="column is-4-tablet is-10-mobile mx-auto is-flex is-justify-content-center" width="600" height="450" style="border:0" loading="lazy" allowfullscreen src="https://www.google.com/maps/embed/v1/search?q=movie%20theater&key=AIzaSyB48e1Y4iP0aPEAjd2_39LsvllEWYBBbb4" title="description"></iframe>
+    <!-- Hero/Logo -->
+    <header class="hero is-small pb-3 bg-dark">
+        <div class="hero-body">
+            <figure class="image image-centered">
+                <img src="./images/on screen logo-1.png" style="max-width: 125px;" />
+            </figure>
         </div>
-      </div>
-    </div>
-  </section>
-  <!-- Search section end -->
+    </header>
+    <!-- Hero/Logo End -->
 
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="container">
-      <h2 class="column has-text-centered is-size-4-tablet is-size-6-mobile">"When life gets you down, you know what you
-        gotta do? Just keep swimming." — Dory</h2>
-    </div>
-  </footer>
-  <!-- Footer End -->
+    <!-- Movie Reel -->
+    <section class="section p-0 reel section-height">
+        <div class="container m-0 mx-auto">
+            <div class="columns has-text-centered is-full-width">
+                <h1 class="column bottom text-size has-text-weight-bold has-text-white">
+                    SEE WHAT IS IN THEATERS NOW
+                </h1>
+            </div>
+        </div>
+    </section>
+    <!-- Movie Reel End -->
 
- <!-- Script Links -->
-        <script src="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.3/dist/js/bulma-carousel.min.js"></script>
-        <script>
-          bulmaCarousel.attach("#carousel-demo", {
+    <!-- Start Carousel -->
+    <section id="movies" class="block column is-10 is-offset-1 has-background-success-light">
+        <div class="carousel movies-carousel" id="carousel">
+            <!-- Carousel card template, JS to fill details -->
+            <div class="card" id="movie-card-0">
+                <!-- Poster image is top component of card, can further refine size -->
+                
+            </div>
+            <!-- Carousel card template, JS to fill details -->
+            <div class="card" id="movie-card-1">
+                <!-- Poster image is top component of card, can further refine size -->
+                
+            </div>
+            <!-- Carousel card template, JS to fill details -->
+            <div class="card" id="movie-card-2">
+                <!-- Poster image is top component of card, can further refine size -->
+                
+            </div>
+            <!-- Carousel card template, JS to fill details -->
+            <div class="card" id="movie-card-3">
+                <!-- Poster image is top component of card, can further refine size -->
+                
+            </div>
+            <!-- Carousel card template, JS to fill details -->
+            <div class="card" id="movie-card-4">
+                <!-- Poster image is top component of card, can further refine size -->
+                
+            </div>
+            <!-- Carousel card template, JS to fill details -->
+            <div class="card" id="movie-card-5">
+                <!-- Poster image is top component of card, can further refine size -->
+                
+            </div>
+            <!-- Carousel card template, JS to fill details -->
+            <div class="card" id="movie-card-6">
+                <!-- Poster image is top component of card, can further refine size -->
+                
+            </div>
+            <!-- Carousel card template, JS to fill details -->
+            <div class="card" id="movie-card-7">
+                <!-- Poster image is top component of card, can further refine size -->
+                
+            </div>
+            <!-- Carousel card template, JS to fill details -->
+            <div class="card" id="movie-card-8">
+                <!-- Poster image is top component of card, can further refine size -->
+                
+            </div>
+            <!-- Carousel card template, JS to fill details -->
+            <div class="card" id="movie-card-9">
+                <!-- Poster image is top component of card, can further refine size -->
+                
+            </div>
+            <!-- Carousel card template, JS to fill details -->
+            <div class="card" id="movie-card-10">
+                <!-- Poster image is top component of card, can further refine size -->
+                
+            </div>
+            <!-- Carousel card template, JS to fill details -->
+            <div class="card" id="movie-card-11">
+                <!-- Poster image is top component of card, can further refine size -->
+                
+            </div>
+            <!-- Carousel card template, JS to fill details -->
+            <div class="card" id="movie-card-12">
+                <!-- Poster image is top component of card, can further refine size -->
+                
+            </div>
+            <!-- Carousel card template, JS to fill details -->
+            <div class="card" id="movie-card-13">
+                <!-- Poster image is top component of card, can further refine size -->
+                
+            </div>
+            <!-- Carousel card template, JS to fill details -->
+            <div class="card" id="movie-card-14">
+                <!-- Poster image is top component of card, can further refine size -->
+                
+            </div>
+            <!-- Carousel card template, JS to fill details -->
+            <div class="card" id="movie-card-15">
+                <!-- Poster image is top component of card, can further refine size -->
+                
+            </div>
+            <!-- Carousel card template, JS to fill details -->
+            <div class="card" id="movie-card-16">
+                <!-- Poster image is top component of card, can further refine size -->
+                
+            </div>
+            <!-- Carousel card template, JS to fill details -->
+            <div class="card" id="movie-card-17">
+                <!-- Poster image is top component of card, can further refine size -->
+                
+            </div>
+            <!-- Carousel card template, JS to fill details -->
+            <div class="card" id="movie-card-18">
+                <!-- Poster image is top component of card, can further refine size -->
+                
+            </div>
+            <!-- Carousel card template, JS to fill details -->
+            <div class="card" id="movie-card-19">
+                <!-- Poster image is top component of card, can further refine size -->
+                
+            </div>
+        </div>
+    </section>
+    <!-- End Carousel -->
+  
+    <!-- Search section -->
+    <section class="section is-small">
+        <div class="tile is-ancestor">
+            <div class="tile is-parent is-vertical">
+                <div class="tile is-child is-12">
+                    <h1 class="is-size-1-tablet is-size-2-mobile has-text-weight-bold has-text-centered">Find
+                        theaters near you!</h1>
+                </div>
+                <div class="tile is-child">
+                    <form class=" is-flex is-justify-content-center is-12" id="user-form">
+                        <input placeholder="ZIP CODE" type="text" class="form-input" id="zipInput" />
+                        <button id="search-Btn" class="btn">Search</button>
+                    </form>
+                </div>
+                <div class="tile is-child" id="map-box">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Search section end -->
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <h2 class="column has-text-centered is-size-4-tablet is-size-6-mobile">"When life gets you down, you know
+                what you
+                gotta do? Just keep swimming." — Dory</h2>
+        </div>
+    </footer>
+    <!-- Footer End -->
+
+    <!-- Script Links -->
+    <script src="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.3/dist/js/bulma-carousel.min.js"></script>
+    <script>
+        bulmaCarousel.attach("#carousel", {
+            initialSlide: 10,
             slidesToScroll: 1,
             slidesToShow: 3,
             navigationKeys: true,
-          });
-        </script>
-        <script src="./assets/js/script.js"></script>
+            loop: true
+        });
+    </script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="./assets/js/script.js"></script>
 
 </body>
 
