@@ -1,17 +1,15 @@
+
 // fetch data from input field
 var getRequestedData = function(event) {
-  // prevent reload when submitting
-  event.preventDefault()
-
-  // store data in variables
-  const zipEl = document.getElementById("zipInput").value;
-  const mapContainer = document.getElementById("map-box");
-
-  mapContainer.innerHTML = "";
-  mapContainer.innerHTML = "<iframe class='google-map mx-auto' width='400' height='600' style='border:0' loading='lazy' allowfullscreen src='https://www.google.com/maps/embed/v1/search?q=movie+theater+near+" + zipEl + "&key=AIzaSyAnFqpH_kWqpIqDBT_nOesR9gTnPS9mIxg' title='description'></iframe>"
-};
-document.getElementById("search-Btn").addEventListener("click", getRequestedData);
-
+    // prevent reload when submitting
+    event.preventDefault()
+    // store data in variables
+    const zipEl = document.getElementById("zipInput").value;
+    const mapContainer = document.getElementById("map-box");
+    mapContainer.innerHTML = "";
+    mapContainer.innerHTML = "<iframe class='google-map mx-auto' width='400' height='600' style='border:0' loading='lazy' allowfullscreen src='https://www.google.com/maps/embed/v1/search?q=movie+theater+near+" + zipEl + "&key=AIzaSyAnFqpH_kWqpIqDBT_nOesR9gTnPS9mIxg' title='description'></iframe>"
+  };
+  document.getElementById("search-Btn").addEventListener("click", getRequestedData);
 
 // fetch movie data
 fetch("https://api.themoviedb.org/3/movie/now_playing?api_key=8c898a456ab85fa46fb53684097389dc&language=en-US&region=US")
@@ -21,9 +19,6 @@ fetch("https://api.themoviedb.org/3/movie/now_playing?api_key=8c898a456ab85fa46f
       response.json().then(function (data) {
         const list = data.results
         console.log(data.results);
-
-
-
 
         for (var i = 0; i < list.length; i++) {
           const movieName = list[i].title;
@@ -95,3 +90,4 @@ $(document).ready(function () {
     localStorage.setItem(zip, text)
   })
 });
+

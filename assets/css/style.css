@@ -39,10 +39,13 @@
   justify-content: center;
 }
 
+
 /* Media Queries for responsive design */
 @media screen and (max-width: 1200px) {
   .section-height {
     height: 215px;
+   
+
   }
   .bottom {
     padding-top: 140px;
