@@ -52,3 +52,18 @@ var getRequestedData = function(event) {
   mapContainer.innerHTML = "<iframe class='google-map mx-auto' width='400' height='600' style='border:0' loading='lazy' allowfullscreen src='https://www.google.com/maps/embed/v1/search?q=movie+theater+near+" + zipEl + "&key=AIzaSyAnFqpH_kWqpIqDBT_nOesR9gTnPS9mIxg' title='description'></iframe>"
 };
 document.getElementById("search-Btn").addEventListener("click", getRequestedData);
+
+$(document).ready(function () {
+  $("".btn").on("click", function () {
+      var zip = $(this).parent().attr("id");
+      var text = $(this).siblings("".form-input").val();
+      localStorage.setItem(zip, text)
+  })
+});
+
+localStorage.setItem("movieName", JSON.stringify(movieName));
+        JSON.parse(localStorage.getItem("movieName"));
+
+        localStorage.setItem("list", JSON.stringify(list));
+
+        JSON.parse(localStorage.getItem("list"));

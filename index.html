@@ -47,36 +47,11 @@
   <!-- Movie Reel End -->
   
      <!-- Start Carousel -->
-     <section class="section">
-        <div class="container">           
-            <div id="carousel-demo" class="carousel columns">
-              <div class="item-1">
-                <span class="movies" id="movieTitle">
-                  <!-- movie poster_path to replace placeholder image below -->
-                 <img src="./images/on screen logo.png"
-                  />
-                </span>
-              </div>
-              <div class="item-2">
-                <span class="movies" id="movieTitle">
-                  <!-- movie poster_path to replace placeholder image below -->
-                  <a href="https://placeholder.com"
-                    ><img src="https://via.placeholder.com/150"
-                  /></a>
-                </span>
-              </div>
-              <div class="item-3">
-                <span class="movies" id="movieTitle">
-                  <!-- movie_poster path to replace placeholder image below -->
-                  <a href="https://placeholder.com"
-                    ><img src="https://via.placeholder.com/150"
-                  /></a>
-                </span>
-              </div>
-            </div>           
-          </div>
-        </section>
-       <!-- End Carousel -->
+    <section id="movies" class="block column is-10 is-offset-1 has-background-success-light">
+      <div class="carousel movies-carousel" id="carousel">
+      </div>
+  </section>
+  <!-- End Carousel -->
 
   <!-- Search section -->
   <section class="section is-small">
@@ -117,6 +92,7 @@
             navigationKeys: true,
           });
         </script>
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
         <script src="./assets/js/script.js"></script>
 
 </body>
