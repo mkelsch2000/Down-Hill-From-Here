@@ -26,6 +26,7 @@ fetch("https://api.themoviedb.org/3/movie/now_playing?api_key=8c898a456ab85fa46f
           var cardInfo = document.createElement("div")
           var cardTitle = document.createElement("p")
           var cardDate = document.createElement("p")
+          var movieDateFormat = moment(movieDate, "YYYY-MM-DD").format("MMMM DD, YYYY")
 
           card.setAttribute("class", "card-image")
           card.setAttribute("id", "poster")
@@ -39,9 +40,7 @@ fetch("https://api.themoviedb.org/3/movie/now_playing?api_key=8c898a456ab85fa46f
 
           cardImg.setAttribute("src", "https://image.tmdb.org/t/p/original" + moviePoster)
           cardTitle.innerHTML = movieName
-          cardDate.innerHTML = "<b>Release Date:</b> " + movieDate
-
-
+          cardDate.innerHTML = "<b>Release Date:</b> " + movieDateFormat
 
           document.getElementById("movie-card-" + i).appendChild(card);
           card.append(cardFig)
