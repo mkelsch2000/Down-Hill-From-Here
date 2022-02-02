@@ -8,8 +8,11 @@
 - CSS
 - JavaScript
 - Bulma
+- Bulma Carousel/Slider extension
 - jQuery 
 - Moment.js
+- Google Maps API
+- The Movie DB API
 
 ## Screenshots
 ### Full Page
