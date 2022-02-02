@@ -24,13 +24,14 @@ fetch("https://api.themoviedb.org/3/movie/now_playing?api_key=8c898a456ab85fa46f
 
         JSON.parse(localStorage.getItem("list"));
 
+        // create constants containing movie information 
         for (var i = 0; i < list.length; i++) {
           const movieName = list[i].title;
           const moviePoster = list[i].poster_path
           const movieDate = list[i].release_date
           const movieDiv = document.createElement("div");
 
-
+          // dynamically create the HTML elements that will fill the cards in the carousel
           var card = document.createElement("div")
           var cardFig = document.createElement("figure")
           var cardImg = document.createElement("img")
@@ -40,6 +41,7 @@ fetch("https://api.themoviedb.org/3/movie/now_playing?api_key=8c898a456ab85fa46f
           var cardDate = document.createElement("p")
           var movieDateFormat = moment(movieDate, "YYYY-MM-DD").format("MMMM DD, YYYY")
 
+          // set classes and ids for carousel cards
           card.setAttribute("class", "card-image")
           card.setAttribute("id", "poster")
           cardFig.setAttribute("class", "image")
@@ -50,10 +52,12 @@ fetch("https://api.themoviedb.org/3/movie/now_playing?api_key=8c898a456ab85fa46f
           cardDate.setAttribute("class", "subtitle is-6")
           cardDate.setAttribute("id", "release-date")
 
+          // add movie information to carousel cards
           cardImg.setAttribute("src", "https://image.tmdb.org/t/p/original" + moviePoster)
           cardTitle.innerHTML = movieName
           cardDate.innerHTML = "<b>Release Date:</b> " + movieDateFormat
 
+          // append to the DOM 
           document.getElementById("movie-card-" + i).appendChild(card);
           card.append(cardFig)
           cardFig.append(cardImg)
