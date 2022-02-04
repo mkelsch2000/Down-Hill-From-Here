@@ -48,6 +48,19 @@ body {
 
 
 /* Media Queries for responsive design */
+@media screen and (max-width: 3500px) and (min-width: 1800px) {
+.reel {
+  background-image: none;
+  background-color: #1A1818;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: inherit;
+  background-position: center 0%; 
+  z-index: -2;
+}
+
+}
+
 @media screen and (max-width: 1200px) {
   .section-height {
     height: 215px;
